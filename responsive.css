@@ -1,0 +1,520 @@
+@media (max-width: 768px) {
+	* {
+		font-size: 0.8rem;
+		padding: 0;
+		margin: 0;
+	}
+	header {
+		height: 70px;
+		width: 95%;
+		display: flex;
+		justify-content: space-around;
+		position: fixed;
+		position: fixed;
+		top: 0;
+		bottom: 100%;
+		z-index: 1;
+	}
+
+	nav {
+		height: 50px;
+		width: 100%;
+		margin-top: 10px;
+		/* border: 1px solid var(--main-color); */
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		/* border: 1px solid var(--main-color); */
+	}
+	nav a {
+		width: 150px;
+		display: flex;
+		align-items: end;
+
+		height: 25px;
+		font-size: 0.5rem;
+		transition: all 0.3s ease-in-out;
+	}
+	nav a:hover {
+		transform: scale(1.1);
+		text-shadow: 0px -1px 43px rgba(0, 248, 73, 1);
+		height: 2px;
+		border-radius: 30%;
+		border: 1px solid var(--main-color);
+		background-color: var(--main-color);
+	}
+	main {
+		flex-direction: column;
+		height: auto;
+	}
+
+	article {
+		width: 100%;
+		justify-content: center;
+	}
+
+	#containerlogo {
+		font-size: 1rem;
+		border: 1px solid var(--main-color);
+		width: 10px;
+		display: none;
+	}
+	#mainintro {
+		height: 800px;
+		display: flex;
+		flex-direction: column-reverse;
+		/* border: 1px solid var(--main-color); */
+	}
+	#portpic {
+		position: absolute;
+		height: 45%;
+		width: 70%;
+		/* border-radius: 53% 47% 68% 32% / 85% 52% 48% 15%; */
+		filter: drop-shadow(0 -1mm 1mm var(--main-color));
+		border: none;
+		transition: all 0.4s ease-in-out;
+	}
+	#portpic:hover {
+		filter: drop-shadow(0 -5mm 4mm var(--main-color));
+	}
+	#imgarticle1 {
+		/* backdrop-filter: blur(25px) saturate(124%);
+        -webkit-backdrop-filter: blur(25px) saturate(124%);
+        background-color: rgba(24, 24, 26, 0.34);
+        border-radius: 12px;
+		/* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		flex-direction: column;
+		height: 80%;
+		border-radius: 10px;
+		/* border: 1px solid rgba(255, 255, 255, 0.125); */
+	}
+	#imgarticle2 {
+		margin: 10px;
+		height: 50%;
+		width: 75%;
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		border: 2px solid var(--main-color);
+		border-radius: 0% 100% 0% 100% / 100% 61% 39% 0%;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+			rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+		/* backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(55, 109, 81, 0.75); */
+	}
+	#About article p {
+		height: 100%;
+		width: 40%;
+		font-size: 0.9rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+			rgba(0, 255, 85, 0.09) 0px 8px 4px, rgba(2, 250, 52, 0.09) 0px 16px 8px,
+			rgba(1, 248, 112, 0.09) 0px 32px 16px;
+	}
+	#About #about1 {
+		height: 40%;
+		width: 100%;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		margin: 10px;
+	}
+	#About #about2 {
+		height: 40%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+	}
+	#About #about3 {
+		height: 40%;
+		width: 100%;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		margin: 10px;
+	}
+	#mainskills {
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		/* border: 1px solid var(--main-color); */
+	}
+	#mainskills #section2skills {
+		height: 50%;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		flex-direction: column;
+		border-radius: 20px;
+	}
+	#mainskills #section2skills ul {
+		display: flex;
+		height: 90%;
+		width: 90%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 5px;
+		align-items: center;
+		justify-content: center;
+	}
+	#mainskills h1 {
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	li {
+		flex-wrap: nowrap;
+		list-style: none;
+		height: 25%;
+		width: 33%;
+		display: flex;
+		border: 1px solid var(--main-color);
+		border-radius: 10px;
+		backdrop-filter: blur(25px) saturate(124%);
+		-webkit-backdrop-filter: blur(25px) saturate(124%);
+		background-color: rgba(24, 24, 26, 0.34);
+		border-radius: 12px;
+		border: 1px solid rgba(255, 255, 255, 0.125);
+		box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+			rgba(0, 255, 85, 0.09) 0px 8px 4px, rgba(2, 250, 52, 0.09) 0px 16px 8px,
+			rgba(1, 248, 112, 0.09) 0px 32px 16px;
+	}
+	span {
+		font-size: 0.9rem;
+	}
+
+	.containerbar {
+		margin: 5px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		width: 200px; /* Adjust the width as needed */
+	}
+
+	.progressbar {
+		background-color: transparent; /* Background of the progress bar */
+		border-radius: 5px; /* Rounded corners */
+		overflow: hidden; /* Ensure no overflow */
+		position: relative; /* Positioning context for the inner span */
+		height: 30px;
+		width: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center; /* Height of the progress bar */
+	}
+
+	/* Styles for progress bar spans */
+	.progressbar span {
+		display: block; /* Block display for the inner span */
+		height: 100%; /* Fill the height of the progress bar */
+		width: 0; /* Start width */
+		background-color: var(--main-color); /* Tailwind CSS color */
+		animation: progress-animation 2s forwards; /* Animation */
+		text-align: center; /* Center the percentage text */
+		color: var(--darkmain-bg); /* Text color */
+		line-height: 20px; /* Center the text vertically */
+		font-size: 0.9rem;
+		font-weight: 800;
+		border-radius: 20px;
+	}
+
+	/* Keyframes for the progress bar animation for each language */
+	@keyframes progress-animation {
+		from {
+			width: 0; /* Start from 0% */
+		}
+		to {
+			width: 100%; /* End at full width */
+		}
+	}
+
+	/* Specific progress widths for each language */
+	#html-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 80% */
+	}
+	#html-progress {
+		width: 70%;
+	}
+
+	#css-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 70% */
+	}
+	#css-progress {
+		width: 65%;
+	}
+
+	#js-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 30% */
+	}
+	#js-progress {
+		width: 30%;
+	}
+
+	#python-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 35% */
+	}
+	#python-progress {
+		width: 35%;
+	}
+
+	#php-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 25% */
+	}
+	#php-progress {
+		width: 25%;
+	}
+
+	#mysql-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 25% */
+	}
+	#mysql-progress {
+		width: 25%;
+	}
+
+	#java-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 15% */
+	}
+	#java-progress {
+		width: 15%;
+	}
+
+	#ruby-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 20% */
+	}
+	#ruby-progress {
+		width: 20%;
+	}
+
+	#tailwind-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 45% */
+	}
+	#tailwind-progress {
+		width: 45%;
+	}
+
+	#c-progress span {
+		animation: progress-animation 2s forwards; /* Animate to 15% */
+	}
+	#c-progress {
+		width: 15%;
+	}
+	#mainskills #section3skills {
+		display: flex;
+		justify-content: center;
+		height: 50%;
+
+		width: 100%;
+	}
+	#section3skills article {
+		height: 100%;
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		flex-direction: column;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+		border-radius: 20px;
+		margin: 10px;
+	}
+	#section3skills article ul {
+		height: 95%;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	#section3skills article ul li {
+		width: 200px;
+		height: 70px;
+		margin: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.imgiconckill {
+		height: 50;
+		width: 30px;
+	}
+	.lname {
+		font-size: 0.7rem;
+	}
+	#mainskills #section3skills {
+		display: flex;
+		justify-content: center;
+		height: 50%;
+
+		width: 100%;
+	}
+	#section3skills article {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		border-radius: 20px;
+		margin: 10px;
+	}
+	#section3skills article ul {
+		height: 95%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#section3skills article ul li {
+		width: 110px;
+		height: 50px;
+		margin: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#Projects {
+		display: flex;
+		flex-direction: column;
+		height: auto; /* Adjusted to auto so it expands with content */
+		background-color: var(--darkmain-bg);
+		border-radius: 8px;
+		padding: 20px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#Projects h2 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		font-size: 28px;
+		color: var(--main-color);
+		margin-bottom: 30px;
+		border: none; /* Removed border for a cleaner look */
+	}
+
+	#mainforproj1,
+	#mainforproj2 {
+		margin: 0;
+		border: none; /* Removed border */
+		width: 100%;
+		height: auto; /* Let the height adjust based on content */
+		display: flex;
+		flex-wrap: wrap; /* Allows responsive wrapping */
+		/* border: 1px solid var(--main-color); */
+		justify-content: space-evenly; /* Added to space out articles evenly */
+	}
+
+	#mainforproj1 article,
+	#mainforproj2 article {
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* Center aligned content */
+		width: 30%; /* Width adjustment for two columns */
+		margin: 10px 0;
+		padding: 15px;
+		/* border: 1px solid var(--main-color); */
+
+		background-color: var(--darkmain-bg);
+		border-radius: 8px;
+		transition: box-shadow 0.3s ease;
+		width: 300px;
+		height: 300px;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slight hover effect */
+	}
+
+	#mainforproj1 article:hover,
+	#mainforproj2 article:hover {
+		box-shadow: rgb(3, 245, 100) 0px 20px 30px -10px;
+	}
+
+	article #imgforproj {
+		max-width: 90%;
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+	.proji {
+		height: 190px;
+		width: 300px;
+		border-radius: 10px;
+	}
+	article h1 {
+		font-size: 1.2rem;
+		color: var(--main-color);
+
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	article .pcaption {
+		font-size: 1rem;
+		color: var(--main-color);
+	}
+
+	.contactsicons img {
+		/* width: 30px;
+        height: 30px;
+        transition: transform 0.3s; */
+	}
+
+	.contactsicons img:hover {
+		transform: scale(1.1);
+	}
+	.swal-modal {
+		background-color: var(--darkmain-bg);
+		border: 3px solid rgb(0, 255, 68);
+		color: var(--main-color);
+	}
+	.swal-title {
+		margin: 0px;
+		font-size: 16px;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+		margin-bottom: 28px;
+		color: var(--main-color);
+	}
+	.swal-text {
+		padding: 17px;
+		display: block;
+		margin: 22px;
+		text-align: center;
+		color: var(--main-color);
+	}
+	.swal-icon--success__line--long {
+		/* background-color: var(--darkmain-bg); */
+	}
+	/* .icon--success:before {
+		background-color: var(--darkmain-bg);
+	} */
+}
+
+@media (max-width: 480px) {
+	body {
+		font-size: 1rem; /* Adjust font size for smaller screens */
+	}
+
+	nav a {
+		font-size: 0.8rem;
+		width: 60px;
+	}
+
+	#containerlogo a {
+		font-size: 1.2rem;
+	}
+}
